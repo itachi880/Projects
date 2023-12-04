@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;   
+     transition: all 2s ease-in-out;
+
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    background-color: #008cff;
+    
+}
+div.inputTask{
+    background-color: rgba(170, 170, 170, 0.466);
+    border-radius: 30px;
+    padding: 5px 5px;
+    margin: 20px 0 10px 0;
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+}
+div.container{
+background-color: #ffffff;
+width: 400px;
+display: flex;
+flex-direction: column;
+align-items:center ;
+border-radius: 10px;
+min-height: 60vh;
+box-shadow: rgb(0, 60, 255) 0 0 10px 5px;
+}
+div.tasks{
+    width: 100%;display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div.task{
+    width: 96%;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    border-radius: 4px;
+    min-height: 6vh;
+    border: 1px gray solid;
+    border-radius: 40px;
+    margin-bottom: 5px;
+    
+}
+div.task div.div1{
+    width: 55%;
+    
+    display: flex;
+    gap: 15px;
+}
+div.div2{
+    justify-content: flex-end;
+    align-items: center;width: 30%;
+    display: flex;
+    gap: 12px;
+    
+}
+div.div1 svg{
+    margin-top: 8px;
+    scale: 1.3;
+    color: rgba(128, 128, 128, 0.705);
+    
+}
+div.div2 svg{
+    scale: 1.1;
+    padding: 4px;
+    width:25px;
+    height: 25px;
+   color:#008cff;
+   border: 1px solid rgba(128, 128, 128, 0.76);
+    border-radius: 500px;
+}
+input.task{
+    outline: none;
+    border: none;
+    font-size: 18px;
+    text-transform: capitalize;
+    background-color: transparent;
+    padding: 0 0 0 10px;
+    width: 80%;
+
+}
+.container .inputTask input.sub{
+    background-color: transparent;
+    background-color: white;
+    border: none;
+    border-radius: 23px;
+    font-size: 18px;
+    padding: 6px 16px;
+    cursor: pointer;
+    color: #008cff;
+    box-shadow:rgb(114, 111, 111) 0px 0px 9px ;
+
+}
+p.descriptionTask{
+    display: flex;
+    font-size: 20px;
+    margin-top: 4px;
+    outline: none;
+    text-transform: capitalize;
+
+}

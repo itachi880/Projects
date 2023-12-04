@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno:wght@400;500;600;700&family=Permanent+Marker&family=Poppins&display=swap");
+@font-face {
+  font-family: poppins;
+  src: url(font/Poppins-Medium.ttf);
+  src: url(font/Poppins-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+.c-btn {
+  display: flex;
+}
+.c-btn .menu {
+  display: none;
+  cursor: pointer;
+}
+html {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #e5e5e5;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body {
+  width: 90%;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a img {
+  width: 100px;
+  margin-left: 5px;
+  display: flex;
+}
+a svg {
+  width: 20px;
+}
+li {
+  list-style: none;
+  margin-right: 40px;
+}
+li a {
+  font-weight: 700;
+  text-transform: capitalize;
+  transition: all ease-in-out 0.12s;
+  font-size: 14px;
+}
+li a:hover {
+  color: #f29494;
+}
+header a.logo {
+  display: flex;
+  width: 160px;
+  transform: translateX(20px);
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 60px;
+}
+header ul {
+  display: flex;
+}
+header a svg {
+  color: #f29494;
+  transform: translateX(-6px);
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn a.btn-1 {
+  background-color: #f38282;
+  color: white;
+  text-transform: capitalize;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #f29494;
+  transition: all ease-in-out 0.12s;
+  padding: 8px 24px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+}
+.btn a.btn-1 span {
+  transform: translate(6px, 0px);
+}
+.btn a.btn-1:hover {
+  color: #000000;
+  background-color: transparent;
+  border-color: #000000;
+}
+.page {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+.page h1 {
+  font-family: "MuseoModerno", cursive;
+  text-transform: capitalize;
+  font-size: 60px;
+  letter-spacing: 3px;
+  margin-bottom: 0px;
+}
+span.font {
+  font-family: "MuseoModerno", cursive;
+  text-transform: capitalize;
+  color: #f57d7d;
+  font-size: 20px;
+  letter-spacing: 10px;
+  margin: 0;
+}
+.page p {
+  max-width: 420px;
+  line-height: 30px;
+  margin-top: 15px;
+}
+.other p {
+  font-family: "MuseoModerno", cursive;
+  text-transform: capitalize;
+  color: #f57d7d;
+  margin: 0;
+}
+.other a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.other h2 {
+  text-transform: capitalize;
+  font-family: "MuseoModerno", cursive;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.other {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.other div {
+  background-color: #ffffff;
+  border-radius: 8px;
+  width: 190px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 10px;
+  transform: translateY(60px);
+  cursor: pointer;
+  transition: all ease-in-out 0.13s;
+}
+.other div:hover {
+  scale: 1.16;
+}
+.other img {
+  width: 120px;
+  margin-bottom: 10px;
+}
+.img-p {
+  width: 500px;
+}
+.img-p img {
+  width: 100%;
+}
+a.dark {
+  transform: translate(7px, 2px);
+}
+
+.active {
+  color: #f57d7d;
+}
+br {
+  display: none;
+}
+ul a.menu {
+  display: none;
+}
+/*dark mode*/
+html.dark {
+  background-color: #08162a;
+}
+html.dark a.dark {
+  color: #fff;
+}
+html.dark a.logo img {
+  filter: invert(100%) brightness(10000%);
+}
+html.dark ul {
+  background-color: #08162a;
+}
+html.dark ul li a {
+  color: #fff;
+}
+html.dark li a:hover {
+  color: #f29494;
+}
+html.dark .btn-1:hover {
+  color: #ffffff;
+  background-color: transparent;
+  border-color: #ffffff;
+}
+html.dark h1,
+html.dark p {
+  color: #fff;
+}
+html.dark .other div {
+  background-color: #ffffff21;
+}
+html.dark .other p {
+  color: #f57d7d;
+}
+html.dark .other h2 {
+  color: #fff;
+}
+html.dark .active {
+  color: #f57d7d;
+}
+html.dark .c-btn .menu {
+  color: white;
+}
+@media (max-width: 1000px) {
+  body {
+    width: 100%;
+  }
+  li {
+    margin: 10px;
+  }
+  .btn {
+    transform: translateX(-15px);
+  }
+  div.descreption {
+    margin: 0 0 0 30px;
+  }
+}
+@media (max-width: 780px) {
+  ul.normal {
+    display: none;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  .c-btn {
+    display: flex;
+    height: fit-content;
+    align-items: center;
+  }
+  .c-btn .menu {
+    display: flex;
+    height: min-content;
+  }
+  ul.list {
+    display: flex;
+    flex-direction: column;
+    transform: translateY(30vh);
+    background-color: #ffffff;
+    width: 100%;
+    position: absolute;
+    align-items: center;
+    height: 250px;
+    z-index: 1000000000;
+    justify-content: center;
+  }
+  ul li {
+    margin: 8px 0 8px 0;
+  }
+  ul.list a {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  div.descreption {
+    margin-left: 10px;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  div.descreption h1 {
+    font-size: 40px;
+  }
+  div.descreption span {
+    font-size: 20px;
+    letter-spacing: 8px;
+  }
+  div.descreption p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .img-p {
+    position: absolute;
+    z-index: -1;
+    left: 60%;
+    top: 10vh;
+    width: 250px;
+  }
+  .img-p img {
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+  }
+}

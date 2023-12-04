@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer</title>
+    <link rel="icon" href="pngegg.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0"
+    />
+  </head>
+  <body>
+    <p id="value-alert" class="active">
+      <span>
+        you are entred "0" as a value or your values are false(have a letters) </span
+      ><button id="try" onclick="popup()">try agine</button>
+    </p>
+    <div class="total">
+      <div class="timerContainer">
+        <h1 id="hourTimer"></h1>
+        <h1 id="minutesTimer"></h1>
+        <h1 id="secondsTimer"></h1>
+      </div>
+      <div class="buttons">
+        <button id="stopSound" class="">
+          <span class="material-symbols-outlined"> notifications </span>
+        </button>
+        <button id="stop" onclick="toggel()">
+          <span class="material-symbols-outlined"> pause </span> pause
+        </button>
+        <button id="reset" onclick="reset()">
+          <span class="material-symbols-outlined"> refresh </span>
+        </button>
+      </div>
+    </div>
+    <div class="pop-up">
+      <label for="hour"> enter hours</label>
+      <input name="hour" type="text" id="hour" />
+      <label for="minute"> enter minutes</label>
+      <input name="minute" type="text" id="minute" />
+      <label for="seconde">enter seconds</label>
+      <input name="seconde" type="text" id="seconde" />
+      <button id="start" onclick="getValues()">start</button>
+    </div>
+
+    <audio>
+      <source
+        src="music/mixkit-digital-clock-digital-alarm-buzzer-992.wav"
+        type="audio/wav"
+      />
+    </audio>
+
+    <script src="main.js"></script>
+  </body>
+</html>

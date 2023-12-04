@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: var(--b-color);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  flex-wrap: wrap;
+}
+div.timing {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: -7px;
+  transform-origin: 50% 20vh;
+  transform: rotate(var(--r));
+  border-radius: 50%;
+  transition: all 0.12s ease-in-out;
+  transition-delay: var(--l);
+}
+h1 {
+  font-family: "Inconsolata", monospace;
+}
+:root {
+  --r: 0deg;
+  --b-color: rgb(0, 216, 133);
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.total {
+  background-color: rgb(236, 236, 236);
+  width: var(--container);
+  height: var(--container);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.459);
+  margin: 30px 0;
+}
+.timerContainer {
+  position: relative;
+  width: var(--cercle);
+  height: var(--cercle);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(172, 172, 172);
+  border-radius: 100%;
+}
+button#start,
+button#stop,
+button#reset,
+button#stopSound {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+
+  height: 40px;
+  margin: 5px 0;
+  gap: 2px;
+  padding: 10px 20px;
+  border: 1px solid var(--b-color);
+  border-radius: 60px;
+  color: var(--b-color);
+  font-size: 17px;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+}
+button#stop {
+  background-color: var(--b-color);
+  color: rgb(255, 255, 255);
+}
+button#stop:hover {
+  background-color: transparent;
+  color: var(--b-color);
+}
+#start {
+  color: var(--b-color);
+  background-color: transparent;
+}
+button#reset,
+button#stopSound {
+  width: 40px;
+  height: 40px;
+  color: var(--b-color);
+  padding: 0;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.material-symbols-outlined {
+  font-variation-settings: "fill" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+button#start:active {
+  opacity: 0;
+}
+
+button#start:hover,
+button#try:hover {
+  color: white;
+  background-color: var(--b-color);
+}
+#value-alert {
+  background-color: rgba(236, 236, 236, 0.699);
+  z-index: 111111;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 60px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.459);
+  backdrop-filter: blur(5px);
+}
+#value-alert span {
+  width: 80%;
+  font-size: 20px;
+  text-transform: capitalize;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+#value-alert button {
+  padding: 10px 20px;
+  border: 1px solid var(--b-color);
+  border-radius: 30px;
+  color: var(--b-color);
+  text-transform: capitalize;
+  font-size: 15px;
+  background-color: transparent;
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+button#reset:hover {
+  transform: rotate(360deg);
+}
+button#reset:focus {
+  transform: rotate(720deg);
+}
+.pop-up {
+  background-color: rgb(236, 236, 236);
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-radius: 10px;
+  width: var(--container);
+  min-height: var(--container);
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.459);
+  transition: scale 0.3s ease-in-out;
+
+  scale: 1;
+  opacity: 1;
+}
+input {
+  margin: 0 0 5px;
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  background-color: var(--b-color);
+  border-radius: 40px;
+  font-size: 17px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 150px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+label {
+  text-transform: capitalize;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+p.active {
+  visibility: hidden;
+}
+div.pop-up.hiden {
+  align-self: center;
+  justify-self: center;
+
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  left: 260px;
+}
+button#stopSound.soundActive {
+  animation: stopSound 0.24s ease-in infinite;
+  animation-delay: 120ms;
+}
+button#stopSound:hover {
+  color: white;
+  background-color: var(--b-color);
+}
+@keyframes stopSound {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-55deg);
+  }
+  70% {
+    transform: rotate(55deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@media (max-width: 420px) {
+  h1 {
+    font-size: 19px;
+  }
+}

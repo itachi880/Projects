@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Honor</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+  </head>
+
+  <body>
+    <header>
+      <a class="logo" href="#"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          class="bi bi-stopwatch-fill"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M6.5 0a.5.5 0 0 0 0 1H7v1.07A7.001 7.001 0 0 0 8 16a7 7 0 0 0 5.29-11.584.531.531 0 0 0 .013-.012l.354-.354.353.354a.5.5 0 1 0 .707-.707l-1.414-1.415a.5.5 0 1 0-.707.707l.354.354-.354.354a.717.717 0 0 0-.012.012A6.973 6.973 0 0 0 9 2.071V1h.5a.5.5 0 0 0 0-1h-3zm2 5.6V9a.5.5 0 0 1-.5.5H4.5a.5.5 0 0 1 0-1h3V5.6a.5.5 0 1 1 1 0z"
+          /></svg
+        ><img src="img/logo.png"
+      /></a>
+
+      <ul id="list" class="normal">
+        <li><a href="#" class="active">home</a></li>
+        <li><a href="#">about us</a></li>
+        <li><a href="#">smartphone</a></li>
+        <li><a href="#">store</a></li>
+        <li><a href="#">contact us</a></li>
+      </ul>
+      <div class="c-btn">
+        <div class="btn">
+          <a href="#" class="btn-1"
+            ><p>buy now</p> <span class="material-symbols-outlined">
+              add_shopping_cart
+            </span> </a
+          ><a
+            id="dark"
+            onclick="dark()"
+            class="dark material-symbols-outlined"
+            href="#dark"
+            >dark_mode</a
+          >
+        </div>
+        <div onclick="list()" id="list" class="material-symbols-outlined menu">menu</div>
+      </div>
+    </header>
+    <div class="page">
+      <div class="descreption">
+        <h1>smartwatch</h1>
+        <span class="font">element serie</span>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit Lorem ipsum
+          dolor sit, amet consectetur
+        </p>
+        <div class="other">
+          <div>
+            <a href="#">
+              <h2>white</h2>
+              <p>element</p>
+              <img src="img/main1.png"
+            /></a>
+          </div>
+          <div>
+            <a href="#">
+              <h2>black</h2>
+              <p>element</p>
+              <img src="img/main2.png"
+            /></a>
+          </div>
+          <div>
+            <a href="#">
+              <h2>selver</h2>
+              <p>element</p>
+              <img src="img/hero.png"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="img-p">
+        <img id="num" src="img/hero.png" />
+      </div>
+    </div>
+    <script src="dark.js"></script>
+  </body>
+</html>

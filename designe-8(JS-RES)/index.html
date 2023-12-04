@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nike-store</title>
+    <link rel="icon" href="img/nike.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <a href="#home">
+        <h1>shoe<span>s</span></h1>
+      </a>
+      <ul class="pc-list">
+        <li><a href="#home">home</a></li>
+        <li><a href="#product">product</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#review">review</a></li>
+        <li><a href="#servece">services</a></li>
+      </ul>
+      <div class="icons">
+        <a href="#login"><i class="fa-regular fa-solid fa-user"></i></a>
+        <a href=""><i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+        <a href=""><i class="fa-solid fa-heart"></i></a>
+        <i onclick=" changeClass()" class="this fa-solid fa-bars"></i>
+
+        <ul class="drop-list closed">
+          <li><a href="#home">home</a></li>
+          <li><a href="#product">product</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#review">review</a></li>
+          <li><a href="#servece">services</a></li>
+        </ul>
+      </div>
+    </header>
+    <section class="sec-1" id="home">
+      <div class="description">
+        <h2>nike</h2>
+        <h3>collection</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+          placeat. Eius sed, voluptate sunt odit illum sapiente facilis,
+          perferendis, quod et distinctio aspernatur. Dolorum possimus iure
+          repellat ut, corporis totam sapiente, commodi exercitationem quae
+          voluptatem numquam itaque laborum maxime aperiam est neque voluptatum
+          doloremque molestiae id rerum laboriosam. Magni sequi aperiam
+          temporibus. Vero tenetur assumenda, nobis aperiam sequi unde
+          consequuntur corporis sunt deserunt animi temporibus dolores quos
+          debitis quo natus facilis odio even
+        </p>
+        <div>
+          <a href=""
+            >shop now<span><i class="fa-solid fa-greater-than"></i></span
+          ></a>
+        </div>
+      </div>
+      <div class="img">
+        <img class="bg-img" src="img/bg1.png" />
+        <img class="img" src="img/shoes.png" alt="" />
+        <div class="social-icons">
+          <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""> <i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </section>
+    <section class="transition" id="product"></section>
+    <section class="sec-2">
+      <h2 class="title">product</h2>
+      <div class="cards" id="cards"></div>
+    </section>
+    <section class="transition" id="about"></section>
+    <section class="about">
+      <h2 class="title">about</h2>
+      <div class="review">
+        <div class="imgs">
+          <div class="left">
+            <img src="img/red_shoes1.png" alt="" onclick="changePhoto(1)" />
+            <img src="img/red_shoes2.png" alt="" onclick="changePhoto(2)" />
+            <img src="img/red_shoes3.png" alt="" onclick="changePhoto(3)" />
+            <img src="img/red_shoes4.png" alt="" onclick="changePhoto(4)" />
+          </div>
+          <div class="center" id="showImg">
+            <img src="img/red_shoes1.png" alt="" />
+          </div>
+        </div>
+        <div class="description-imgs">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+            voluptates velit inventore aliquam excepturi voluptatem accusamus
+            quam in fuga dolorum unde impedit dolor rem aliquam minima. Atque,
+            tempore! Iure, voluptatibus consequatur praesentium fuga vtque.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+            voluptate eveniet eius quam doloribus, placeat maxime id. Natus
+            vitae excepturi placeat iusto repellat, fugit consequuntur quisquam
+            eum eaque, voluptatem praesentium. Vero, eligendi ipsam. Animi
+            recusandae fugit non tenetur minus. Pariatur autem, nostrum
+            aspernatur nobis deleniti assumenda eveniet commodi officia
+            veritatis, ipsum ex perspiciatis dicta quam cum et vero dolorum
+            consequatur quas provident ducimus aliquid necessitatibus molestias!
+            Debitis labore nemo natus. Ipsum fuga corrupti repudiandae atque!
+            similique voluptas beatae non! Adipisci, vero ipsa pariatur,
+            suscipit provident unde fugiat eveniet aperiam ducimus, officia
+            consequatur!
+          </p>
+        </div>
+      </div>
+      <a href="" class="button">shop now</a>
+    </section>
+    <section class="transition" id="review"></section>
+    <section class="sec-4">
+      <h1 class="title">customer's <span>review</span></h1>
+      <div class="reviews">
+        <div class="card">
+          <div class="identifier">
+            <img src="img/girl_dp1.jpg" alt="" />
+            <div class="numRev">
+              <h1 class="name">ranidi lochana</h1>
+              <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </span>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+            inventore nihil tempore accusamus nemo aperiam unde fugit molestias.
+            Iste facilis tempore Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Inventore sit perferendi
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="identifier">
+            <img src="img/gir_dp2.jpg" alt="" />
+            <div class="numRev">
+              <h1 class="name">kaveesha vidurangi</h1>
+              <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </span>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+            inventore nihil tempore accusamus nemo aperiam unde fugit molestias.
+            Iste facilis tempore Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Inventore sit perferendi
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="identifier">
+            <img src="img/gir_dp3.jpg" alt="" />
+            <div class="numRev">
+              <h1 class="name">julia christiva</h1>
+              <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </span>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+            inventore nihil tempore accusamus nemo aperiam unde fugit molestias.
+            Iste facilis tempore Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Inventore sit perferendi
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="identifier">
+            <img src="img/man_dp1.jpg" alt="" />
+            <div class="numRev">
+              <h1 class="name">senuda dilwan</h1>
+              <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </span>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+            inventore nihil tempore accusamus nemo aperiam unde fugit molestias.
+            Iste facilis tempore Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Inventore sit perferendi
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="identifier">
+            <img src="img/man_dp2.jpg" alt="" />
+            <div class="numRev">
+              <h1 class="name">sayuru tharanga</h1>
+              <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </span>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+            inventore nihil tempore accusamus nemo aperiam unde fugit molestias.
+            Iste facilis tempore Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Inventore sit perferendi
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="identifier">
+            <img src="img/man_dp3.jpg" alt="" />
+            <div class="numRev">
+              <h1 class="name">charith aruna</h1>
+              <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </span>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+            inventore nihil tempore accusamus nemo aperiam unde fugit molestias.
+            Iste facilis tempore Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Inventore sit perferendi
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="transition" id="servece"></section>
+    <section class="sec-5">
+      <h2 class="title">services</h2>
+      <div class="services">
+        <div class="delevery">
+          <i class="fa-solid fa-truck-fast"></i>
+          <h4>fast delevery</h4>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisi praesentium dolorem
+            nam ad natus doloremque officiis rem cum itaque!
+          </p>
+        </div>
+        <div class="replacement">
+          <i class="fa-solid fa-rotate-left"></i>
+          <h4>10 days replacement</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+            quam blanditiis repudiandae! Nisi labore
+          </p>
+        </div>
+        <div class="support">
+          <i class="fa-solid fa-headset"></i>
+          <h4>24 x 7 support</h4>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Possimus, neque.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="transition" id="login"></section>
+    <section class="login-sec">
+      <div class="img"><img src="img/logshoes.png" alt="" /></div>
+      <div class="log-in">
+        <h6>welcome back!</h6>
+        <form action="">
+          <label for="user">user name</label>
+          <div class="user-input">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" name="user" id="user" placeholder="user name" />
+          </div>
+          <label for="pass">password</label>
+          <div class="user-input">
+            <i class="fa-solid fa-lock"></i>
+            <input
+              type="password"
+              name="pass"
+              id="pass"
+              placeholder="password"
+            />
+          </div>
+          <a href="" dir="rtl">? forget password </a>
+          <input type="submit" value="login" />
+        </form>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
