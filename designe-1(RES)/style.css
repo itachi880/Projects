@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800;900&family=Montserrat:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+}
+html {
+  width: 100%;
+  min-height: max-content;
+  background: linear-gradient(45deg, rgb(0, 49, 0) 40%, rgb(101, 156, 101))
+    no-repeat;
+  justify-content: center;
+  display: flex;
+  overflow-x: hidden;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 90px;
+}
+span.material-symbols-outlined {
+  display: none;
+}
+header a.material-symbols-outlined {
+  display: none;
+}
+body {
+  width: 76%;
+  min-height: 100vh;
+}
+.logo {
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 19px;
+}
+.navbar {
+  display: flex;
+}
+.navbar ul {
+  display: flex;
+}
+.navbar ul li {
+  list-style: none;
+  margin-left: 20px;
+  padding-bottom: 2px;
+
+  position: relative;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: 15px;
+}
+.navbar ul li a::before {
+  position: absolute;
+  bottom: 0;
+
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  transition: all ease-in-out 0.15s;
+}
+.navbar ul li:hover a::before {
+  width: 100%;
+}
+.one ul li {
+  list-style: none;
+}
+.one ul li a {
+  color: white;
+}
+ul li svg {
+  width: 18px;
+  margin-bottom: 5px;
+}
+section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 110%;
+  min-height: calc(100% - 250px);
+}
+.three {
+  width: 650px;
+  position: absolute;
+  right: 20%;
+}
+img {
+  width: 100%;
+}
+.one {
+  position: absolute;
+  left: 6%;
+}
+.tow {
+  z-index: 10000;
+}
+.tow p {
+  color: white;
+  width: 500px;
+  font-weight: lighter;
+  margin: 18px 0;
+}
+.tow p.one1 {
+  font-size: 13px;
+}
+.tow p.tow2 {
+  font-weight: 100;
+}
+.tow h2 {
+  color: white;
+  font-family: "Permanent Marker", cursive;
+  font-size: 70px;
+}
+button.one1 {
+  color: white;
+  background-color: rgb(58, 116, 58);
+  border: 1px solid transparent;
+  outline: none;
+  border-radius: 20px;
+  padding: 9px 28px;
+  text-transform: capitalize;
+  transition: all ease-in-out 0.15s;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+button.one1:hover {
+  background-color: transparent;
+  border-color: rgb(58, 116, 58);
+}
+button.tow2 {
+  color: white;
+  background-color: transparent;
+  border: 1px solid rgb(58, 116, 58);
+  outline: none;
+  border-radius: 20px;
+  padding: 9px 28px;
+  text-transform: capitalize;
+  transition: all ease-in-out 0.15s;
+}
+button {
+  margin-left: 15px;
+  margin-bottom: 100px;
+}
+button.tow2 svg {
+  margin: 0 10px 0 0;
+  transition: all ease-in-out 0.15s;
+}
+button.tow2:hover {
+  background-color: rgb(58, 116, 58);
+}
+.one li:hover a svg {
+  color: var(--sc);
+}
+@media (max-width: 1200px) {
+  body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    justify-content: space-around;
+  }
+  section {
+    display: flex;
+    justify-content: flex-start;
+    gap: 80px;
+  }
+  div.one {
+    position: relative;
+    width: 80px;
+  }
+}
+@media (max-width: 1050px) {
+  .three {
+    right: 4%;
+  }
+}
+@media (max-width: 830px) {
+  .three {
+    right: 0;
+    width: 500px;
+  }
+  body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 800px) {
+  .one {
+    display: none;
+  }
+  .tow {
+    margin-left: 30px;
+  }
+}
+@media (max-width: 730px) {
+  .navbar {
+    display: none;
+  }
+  #nav {
+    position: fixed;
+    flex-direction: column;
+    background-color: rgba(136, 214, 136, 0.829);
+    right: 40px;
+    top: 60px;
+    z-index: 10000000001;
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+  }
+  ul li {
+    list-style: none;
+    margin-left: 20px;
+    padding-bottom: 2px;
+
+    position: relative;
+  }
+  ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 15px;
+  }
+  ul li a::before {
+    position: absolute;
+    bottom: 0;
+
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    transition: all ease-in-out 0.15s;
+  }
+  ul li:hover a::before {
+    width: 100%;
+  }
+  #nav ul {
+    margin: 15px 0px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+  header a.material-symbols-outlined {
+    display: flex;
+  }
+  a.material-symbols-outlined {
+    display: block;
+    color: white;
+    position: relative;
+    left: 100px;
+    cursor:pointer;
+  }
+  div.list {
+    display: flex;
+  }
+  html {
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  header {
+    justify-content: center;
+  }
+}
+@media (max-width: 550px) {
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+  .tow button {
+    margin: 0 0;
+  }
+  .three img {
+    position: relative;
+    right: 0px;
+    width: 500px;
+  }
+  .three {
+    position: relative;
+    display: flex;
+    width: fit-content;
+    right: 100px;
+  }
+}
+@media (max-width: 415px) {
+  header a.one1one {
+    transform: translateX(-20px);
+    scale: 1.3;
+  }
+  p.tow2 {
+    width: 300px;
+  }
+  .tow h2 {
+    transform: translateX(10px);
+  }
+  .tow h2,
+  .tow p {
+    width: 230px;
+    margin: 7px 0;
+  }
+  p.one1 {
+    margin: 0;
+  }
+  .tow button {
+    margin-bottom: 8px;
+    transform: translateX(15px);
+  }
+  section {
+    align-items: flex-start;
+  }
+  .tow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    transform: translateX(50px);
+  }
+  .three {
+    transform: translateY(-100px);
+  }
+}
+@media (max-width: 395px) {
+  header a.one1one {
+    transform: translateX(-40px);
+    scale: 1.3;
+  }
+  .tow {
+    transform: translateX(20px);
+  }
+  .tow button {
+    transform: translateX(40px);
+  }
+  .tow button.one1 {
+    margin-top: 9px;
+  }
+  .tow p {
+    margin: 0;
+  }
+}

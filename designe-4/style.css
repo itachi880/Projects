@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.644);
+}
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  height: fit-content;
+  align-items: center;
+  flex-wrap: nowrap;
+  background-color: transparent;
+}
+nav div img {
+  width: 145px;
+  height: auto;
+  position: relative;
+  left: -144px;
+}
+nav .links {
+  position: relative;
+  left: 100px;
+}
+nav div ul {
+  display: inline-flex;
+  gap: 38px;
+  list-style: none;
+  margin-right: 38px;
+}
+
+nav div ul li a,
+nav div a {
+  color: white;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.18s ease-in-out;
+}
+
+nav div ul li a::after {
+  content: " ";
+  display: flex;
+  width: 0%;
+  position: relative;
+  left: 0;
+  bottom: 0px;
+  top: 0px;
+  height: 2px;
+  background-color: #c04c29;
+  transition: all 0.18s ease-in-out;
+}
+
+nav div ul li a:hover::after {
+  width: 100%;
+}
+nav div .btn:hover {
+  background-color: transparent;
+  color: #c04c29;
+  text-shadow: 0 0 8px #c04c29;
+}
+nav div .btn {
+  margin-left: 0px;
+  border: 2px solid #c04c29;
+  padding: 6px 20px;
+  background-color: #c04c29;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+}
+.backvid {
+  position: absolute;
+  z-index: -10;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 25px;
+}
+section .title h1 {
+  color: white;
+  text-transform: capitalize;
+  font-size: 60px;
+}
+section .search-box {
+  background-color: white;
+  padding: 6px 12px;
+  width: calc(100% - 35%);
+  display: flex;
+  justify-content: space-between;
+  border-radius: 4px;
+}
+section .search-box .text:focus {
+  outline: none;
+}
+
+section .search-box .text {
+  border: none;
+  text-transform: capitalize;
+  word-spacing: 2px;
+  width: 84%;
+  font-size: 16.4px;
+}
+section .search-box .submit:hover {
+  background-color: transparent;
+  color: #c04c29;
+}
+
+section .search-box .submit:active {
+  opacity: 0;
+}
+
+section .search-box .submit {
+  background-color: #c04c29;
+  border: 2px solid #c04c29;
+  padding: 9px 20px;
+  color: white;
+  text-transform: capitalize;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.14s ease-in-out;
+}
+section .imgs .img {
+  width: 27px;
+  padding-bottom: 8px;
+  padding-top: 15px;
+}
+section .imgs .p-img p {
+  color: white;
+  padding-bottom: 8px;
+  text-transform:capitalize;
+}
+section .imgs .p-img {
+  width: 84px;
+  flex-direction: column;
+  display: flex;
+  background-color: #c04c2980;
+  border-radius: 4px;
+  align-items: center;
+  border: 1px solid #c04c2980;
+  transition: all 0.16s ease-in-out;
+}
+section .imgs {
+  display: flex;
+  gap: 15px;
+}
+section .p-img:hover {
+  background-color: transparent;
+}
